@@ -104,7 +104,7 @@ body {
   background-color: var(--eggshell);
   font-family: "Outfit", sans-serif;
   color: var(--darkcharcoal);
-  padding: 1rem;
+  padding: 5rem 0;
 }
 
 main {
@@ -130,7 +130,8 @@ h1,
 #instructions h2,
 #nutrition h2 {
   font-family: "Young Serif", serif;
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 2.7rem;
 }
 
 #prep-time {

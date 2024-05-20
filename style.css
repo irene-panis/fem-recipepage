@@ -130,12 +130,17 @@ h1,
 #instructions h2,
 #nutrition h2 {
   font-family: "Young Serif", serif;
+  font-size: 2rem;
 }
 
 #prep-time {
   background-color: var(--rosewhite);
-  padding: 1rem;
+  padding: 2rem;
   margin-top: 1rem;
+}
+
+#prep-time h2 {
+  font-size: 1.5rem;
 }
 
 #prep-time h2,
@@ -143,9 +148,17 @@ h1,
   margin: 0;
 }
 
+#prep-time ul {
+  padding: 1rem 0 0 1rem;
+}
+
 #prep-time h2,
 #prep-time ul li::marker {
   color: var(--darkraspberry);
+}
+
+#prep-time ul {
+  
 }
 
 .recipe-section-header,

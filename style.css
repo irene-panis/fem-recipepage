@@ -131,7 +131,16 @@ h1,
 #nutrition h2 {
   font-family: "Young Serif", serif;
   font-weight: 400;
+}
+
+h1 {
   font-size: 2.7rem;
+}
+
+#ingredients h2,
+#instructions h2,
+#nutrition h2 {
+  font-size: 2rem;
 }
 
 #prep-time {

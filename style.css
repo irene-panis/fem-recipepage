@@ -96,10 +96,6 @@ textarea:not([rows]) {
   text-align: center; 
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%); 
-}
-
 html, body {
   margin: 0;
 }
@@ -154,7 +150,8 @@ h1,
 
 .recipe-section-header,
 .nutr-value,
-li::marker {
+li::marker,
+a {
   color: var(--nutmeg);
 }
 

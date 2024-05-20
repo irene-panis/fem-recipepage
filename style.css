@@ -102,13 +102,13 @@ textarea:not([rows]) {
 
 html, body {
   margin: 0;
-  padding: 0;
 }
 
 body {
   background-color: var(--eggshell);
   font-family: "Outfit", sans-serif;
   color: var(--darkcharcoal);
+  padding: 1rem;
 }
 
 main {
@@ -129,7 +129,10 @@ img,
   border-radius: 0.5rem;
 }
 
-h1, h2 {
+h1, 
+#ingredients h2,
+#instructions h2,
+#nutrition h2 {
   font-family: "Young Serif", serif;
 }
 
@@ -139,12 +142,7 @@ h1, h2 {
   margin-top: 1rem;
 }
 
-#prep-time h2 {
-  font-family: "Outfit", sans-serif;
-  font-weight: 700;
-  margin: 0;
-}
-
+#prep-time h2,
 #prep-time ul {
   margin: 0;
 }
@@ -161,7 +159,9 @@ li::marker {
 }
 
 #instructions ol li::marker,
-.nutr-value {
+.nutr-value,
+.prep-category,
+.step-name {
   font-weight: 600;
 }
 
@@ -179,11 +179,6 @@ tr:last-child td {
   border-bottom: none;
 }
 
-.prep-category,
-.step-name {
-  font-weight: 600;
-}
-
 ol, ul {
   padding: 1rem;
 }
@@ -194,5 +189,5 @@ li {
 
 #ingredients,
 #instructions {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #ddd;
 }

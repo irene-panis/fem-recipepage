@@ -76,6 +76,21 @@ textarea:not([rows]) {
 
 /* end css reset */
 
+/* variables */
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --darkraspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rosewhite: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --lightgrey: hsl(30, 18%, 87%);
+  --wengebrown: hsl(30, 10%, 34%);
+  --darkcharcoal: hsl(24, 5%, 18%);
+}
+
+/* end variables */
+
 .attribution { 
   font-size: 11px; 
   text-align: center; 
@@ -83,4 +98,99 @@ textarea:not([rows]) {
 
 .attribution a {
   color: hsl(228, 45%, 44%); 
+}
+
+body {
+  background-color: var(--eggshell);
+  font-family: "Outfit", sans-serif;
+  color: var(--darkcharcoal);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--white);
+  max-width: 40rem;
+  padding: 2rem;
+}
+
+.card,
+img,
+#prep-time {
+  border-radius: 0.5rem;
+}
+
+h1, h2 {
+  font-family: "Young Serif", serif;
+}
+
+#prep-time {
+  background-color: var(--rosewhite);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#prep-time h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+#prep-time ul {
+  margin: 0;
+}
+
+#prep-time h2,
+#prep-time ul li::marker {
+  color: var(--darkraspberry);
+}
+
+.recipe-section-header,
+.nutr-value,
+li::marker {
+  color: var(--nutmeg);
+}
+
+#instructions ol li::marker,
+.nutr-value {
+  font-weight: 600;
+}
+
+#nutrition table {
+  width: 100%;
+  padding: 1rem;
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.prep-category,
+.step-name {
+  font-weight: 600;
+}
+
+ol, ul {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+li {
+  padding-left: 1rem;
+}
+
+#ingredients,
+#instructions {
+  border-bottom: 1px solid lightgrey;
 }
